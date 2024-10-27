@@ -101,6 +101,24 @@
         </address></p>
         <p>All rights reserved &copy; 2023 Bethany's Pie Shop</p>
         <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
+        <form method="post" enctype="application/x-www-form-urlencoded">
+            Your Name: <input type="text" name="customerName"><br />
+            Your Email: <input type="email" name="customerEmail"><br />
+            Your Phone:<input type="tel" name="customerPhone">
+            <input type="radio" name="phoneType" value="cell"> cell
+            <input type="radio" name="phoneType" value="home"> home
+            <input type="radio" name="phoneType" value="work"> work
+            <br />
+            Ok to contact me:
+            <input type="checkbox" name="okToContact" value="phone"> by phone
+            <input type="checkbox" name="okToContact" value="email"> by email
+            <input type="hidden" name="source" value="ContactForm"><br />
+            <textarea name="feedbackText" cols="40" rows="3" placeholder="Comments"></textarea><br />
+            Rating: <input type="number" name="customerRating" min="1" max="10"><br />    
+            Date: <input type="date" name="issueDate"><br />    
+
+            <input type="button" value="SendContact">
+        </form>
     </footer>
     <script src="script.js"></script>
 </body>
